@@ -9,42 +9,109 @@
 <body>
     <h1>Bem-vindo à Loja de Eletrodomésticos</h1>
     <img src="img/loja.png" alt="Logo da loja" width="10%">
-    <h2>Categorias de Produtos</h2>
-    <ul>
-        <li><a href="categoria1.html">Refrigeradores</a></li>
-        <li><a href="categoria2.html">Máquinas de Lavar</a></li>
-        <li><a href="categoria3.html">Televisores</a></li>
-    </ul>
-    <h2>Produtos em Destaque</h2>
-    <ul>
-        <li>
-            <a href="produto1.html">
-                <img src="img/refrigerador.jpg" alt="Produto 1" width="20%">
-                <br>
-                <strong>Refrigerador ABC</strong>
-                <br>
-                Preço: R$ 1.999,00
-            </a>
-        </li>
-        <li>
-            <a href="produto2.html">
-                <img src="img/m_lavar.jpg" alt="Produto 2" width="20%">
-                <br>
-                <strong>Máquina de Lavar XYZ</strong>
-                <br>
-                Preço: R$ 1.499,00
-            </a>
-        </li>
-        <li>
-            <a href="produto3.html">
-                <img src="img/tv.jpg" alt="Produto 3" width="20%">
-                <br>
-                <strong>Televisor QWERTY</strong>
-                <br>
-                Preço: R$ 2.299,00
-            </a>
-        </li>
-    </ul>
+<div>
+    <h2>Produtos Disponíveis</h2>
+
+    <table border="1">
+        <tr>
+            <th>Foto</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td><img src="img/venda/tv.jpg" alt="TV LED 40" width="50%"></td>
+            <td>Smart TV LED 40" Full HD</td>
+            <td>R$ 1.999,00</td>
+        </tr>
+        <tr>
+            <td><img src="img/venda/geladeira.jpg" alt="Geladeira Frost Free" width="50%"></td>
+            <td>Geladeira Frost Free Duplex 400L</td>
+            <td>R$ 2.499,00</td>
+        </tr>
+        <tr>
+            <td><img src="img/venda/fogao.jpg" alt="Fogão 4 Bocas" width="50%"></td>
+            <td>Fogão 4 Bocas com Acendimento Automático</td>
+            <td>R$ 899,00</td>
+        </tr>
+        <tr>
+            <td><img src="img/venda/lavar.jpg" alt="Máquina de Lavar 10kg" width="50%"></td>
+            <td>Máquina de Lavar 10kg com Diversas Funções</td>
+            <td>R$ 1.599,00</td>
+        </tr>
+        <tr>
+            <td><img src="img/venda/microondas.jpg" alt="Micro-ondas" width="50%"></td>
+            <td>Micro-ondas com Capacidade de 30 Litros</td>
+            <td>R$ 499,00</td>
+        </tr>
+        <tr>
+            <td><img src="img/venda/aspirador.jpg" alt="Aspirador de Pó" width="50%"></td>
+            <td>Aspirador de Pó Potente com Filtro HEPA</td>
+            <td>R$ 349,00</td>
+        </tr>
+        <tr>
+            <td><img src="img/venda/liquidificador.jpg" alt="Liquidificador" width="50%"></td>
+            <td>Liquidificador com 5 Velocidades</td>
+            <td>R$ 99,00</td>
+        </tr>
+        <tr>
+            <td><img src="img/venda/secador.jpg" alt="Secador de Cabelo" width="50%"></td>
+            <td>Secador de Cabelo com 2 Velocidades</td>
+            <td>R$ 79,00</td>
+        </tr>
+        <tr>
+            <td><img src="img/venda/panela.jpg" alt="Panela Elétrica" width="50%"></td>
+            <td>Panela Elétrica Multiuso com Função de Cozimento a Vapor</td>
+            <td>R$ 199,00</td>
+        </tr>
+        <tr>
+            <td><img src="img/venda/cafeteira.jpg" alt="Cafeteira" width="50%"></td>
+            <td>Cafeteira Programável com Jarra Térmica de Aço Inoxidável</td>
+            <td>R$ 149,00</td>
+            </tr>
+            </table>
+            
+            <h2>Formulário de Compra</h2>
+
+            <form>
+                <label for="produto">Selecione o Produto:</label>
+                <select id="produto" name="produto">
+                    <option value="tv">TV LED 40"</option>
+                    <option value="geladeira">Geladeira Frost Free</option>
+                    <option value="fogao">Fogão 4 Bocas</option>
+                    <option value="lavadora">Máquina de Lavar 10kg</option>
+                    <option value="microondas">Micro-ondas</option>
+                    <option value="aspirador">Aspirador de Pó</option>
+                    <option value="liquidificador">Liquidificador</option>
+                    <option value="secador">Secador de Cabelo</option>
+                    <option value="panela">Panela Elétrica</option>
+                    <option value="cafeteira">Cafeteira</option>
+                </select>
+            
+                <br><br>
+            
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            
+                <br><br>
+            
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <br><br>
+            
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            
+                <br><br>
+            
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            
+                <br><br>
+            
+                <input type="submit" value="Efetivar Compra">
+            </form>
+</div>
     <h2>Contato</h2>
     <p>Entre em contato conosco pelo telefone: (XX) XXXX-XXXX</p>
     <p>Endereço: Rua Fictícia, 123 - Cidade Imaginária</p>
