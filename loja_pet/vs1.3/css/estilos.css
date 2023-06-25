@@ -1,0 +1,24 @@
+p{
+    text-align: justify;
+}
+h3{
+    font-family: cursive;
+}
+img {
+    border-color: red;
+    border-style:double;
+}
+a {
+color: red;
+}
+header {
+background-color: rgb(25, 35, 129);
+color: #fff;
+text-align: center;
+}
+
+footer p{
+background-color: rgb(139, 69, 19);
+color: #fff;
+text-align: center;
+}

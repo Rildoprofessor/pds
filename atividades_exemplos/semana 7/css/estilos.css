@@ -1,0 +1,33 @@
+/* Atividade 1: Destacar o texto de destaque */
+.destaque {
+    background-color: yellow;
+/* Atividade 6: Alterar o fundo dos itens de destaque */
+    background-color: orange;
+/* Atividade 8: Aumentar o tamanho do texto de destaque */
+font-size: 24px;
+/* Atividade 10: Alterar o fundo de destaque para lightblue*/
+background-color: lightblue;
+}
+
+/* Atividade 2: Aplicar estilo itálico ao subtítulo */
+.subtitulo {
+    font-style: italic;
+/* Atividade 9: Alterar a cor do subtítulo */
+    color: green;
+}
+/* Atividade 3: Adicionar margem esquerda aos itens da lista */
+.item {
+    margin-left: 30px;
+}
+/* Atividade 4: Adicionar uma borda ao contêiner */
+#container {
+    border: 1px solid blue;
+}
+/* Atividade 5: Alterar a cor do texto no box */
+.texto {
+    color: red;
+}
+/* Atividade 7: Adicionar um preenchimento ao box */
+#box {
+    padding: 20px;
+}

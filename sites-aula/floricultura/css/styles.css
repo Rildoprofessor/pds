@@ -1,0 +1,104 @@
+/* Estilos para o header */
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/* Estilos para o footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/* Estilos para a página principal */
+#home {
+    text-align: center;
+}
+#home h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.poema {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos para a página de produtos */
+#produtos {
+    text-align: center;
+}
+
+#produtos h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#produtos ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#produtos li {
+    width: 300px;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #f2f2f2;
+}
+
+#produtos h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#produtos p {
+    margin-bottom: 10px;
+}
+
+.valor {
+    font-weight: bold;
+    color: #333;
+}
+/* Estilos para a página "Sobre Nós" */
+#sobre {
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    margin-bottom: 10px;
+}
+/* Estilos para o header */
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
