@@ -1,0 +1,115 @@
+p{
+    text-align: justify;
+}
+h2{
+    font-family: cursive;
+}
+
+a {
+    color: white; /* Alterando a cor do texto do link para branco */
+    text-decoration: none; /* Removendo o sublinhado dos links */
+}
+header {
+    background-color: rgb(25, 35, 129);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.texto_h1 {
+    font-size: 8em; /* Alterando o tamanho da fonte para 72px */
+}
+
+
+@media screen and (max-width: 768px) {
+  .texto_h1 {
+    font-size: 2rem; /* Reduzir o tamanho da fonte para telas menores */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .texto_h1 {
+    font-size: 1.5rem; /* Reduzir ainda mais o tamanho da fonte para telas pequenas */
+  }
+}
+
+
+footer {
+    background-color: rgb(139, 69, 19);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-column {
+    margin: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center; /* Centralizando os cards */
+}
+
+.card {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.imagem {
+border-radius:150px;
+display: block; 
+margin: 0 auto;
+}
+
+main {
+    margin: 20px 10%;
+}
+
+.social-media-icons {
+    list-style-type: none; /* Removendo os ícones das listas */
+    display: flex;
+    justify-content: center; /* Centralizando os ícones */
+}
+
+.social-media-icons li {
+    margin: 0 5px;
+}
+
+.social-media-icons li img {
+    width: 20px;
+    height: 20px;
+}
+
+.text-center {
+    text-align: center; /* Centralizando o último parágrafo do footer */
+}
+
+.menu {
+    display: flex; /* Transformando o menu em horizontal */
+    justify-content: center; /* Centralizando o menu */
+    color: white; /* Definindo a cor do texto do menu */
+}
+
+.menu ul {
+    display: flex; /* Alinhando os itens do menu na horizontal */
+    list-style-type: none; /* Removendo as bolinhas da lista */
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px; /* Espaçamento entre os itens do menu */
+}
