@@ -11,7 +11,6 @@
 $str = "Hello world!";
 echo $str;
 ?>
-<a href="index.html">Voltar para o Início</a>
 </body>
 </html>
 
