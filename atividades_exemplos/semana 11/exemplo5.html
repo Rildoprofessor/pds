@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personalização de Marcadores de Lista com CSS</title>
+  <style>
+    /* Estiliza a lista não ordenada */
+    ul {
+      list-style-type: none; /* Remove o marcador padrão */
+    }
+    /* Define uma imagem como marcador */
+    li {
+      list-style-image: url('checkmark.png'); 
+    /* Usa uma imagem como marcador */
+    }
+    /* Ajusta a posição da imagem */
+    li:first-child {
+      list-style-position: inside; 
+    /* Coloca o marcador dentro da área de conteúdo */
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+</body>
+</html>

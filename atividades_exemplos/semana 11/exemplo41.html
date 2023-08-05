@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu com Modo Claro e Modo Escuro</title>
+  <style>
+    /* Variáveis para as cores do modo claro */
+    :root {
+      --background-color: #f9f9f9;
+      --text-color: #333;
+      --link-color: #007bff;
+    }
+
+    /* Variáveis para as cores do modo escuro */
+    .dark-mode {
+      --background-color: #333;
+      --text-color: #f9f9f9;
+      --link-color: #55aaff;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    nav {
+      background-color: var(--background-color);
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--link-color);
+      padding: 10px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: darkcyan;
+    }
+
+    /* Estilos para o modo escuro */
+    .dark-mode nav {
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    .dark-mode nav a {
+      color: var(--link-color);
+    }
+  </style>
+</head>
+<body>
+  <button onclick="toggleDarkMode()">Alternar Modo</button>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
+

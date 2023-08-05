@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabela Responsiva com CSS</title>
+  <style>
+    /* Torna a tabela responsiva */
+    table {
+      width: 100%; 
+    /* Define a largura da tabela como 100% do tamanho da tela */
+    }
+    /* Esconde algumas células em telas menores */
+    @media screen and (max-width: 600px) {
+      th:nth-child(2),
+      td:nth-child(2) {
+        display: none; 
+    /* Esconde as células da segunda coluna em telas menores */
+      }
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Profissão</th>
+    </tr>
+    <tr>
+      <td>João</td>
+      <td>30</td>
+      <td>Engenheiro</td>
+    </tr>
+  </table>
+</body>
+</html>

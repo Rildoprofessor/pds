@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo - Botões Interativos com Pseudo-Classes</title>
+  <style>
+    .button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Estilo padrão */
+    .button {
+      background-color: #4CAF50;
+    }
+
+    /* Estilo quando o mouse passa por cima do botão */
+    .button:hover {
+      background-color: #ee0b0b;
+    }
+
+    /* Estilo quando o botão está sendo clicado */
+    .button:active {
+      background-color: #0f30eb;
+    }
+
+    /* Estilo quando o botão está focado (navegação por teclado) */
+    .button:focus {
+      outline: none;
+      box-shadow: 0 0 5px #f009aa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo - Botões Interativos com Pseudo-Classes</h1>
+  <button class="button">Clique Aqui</button>
+</body>
+</html>
+

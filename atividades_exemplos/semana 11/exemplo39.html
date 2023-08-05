@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo - Estilos Avançados para Menus</title>
+  <style>
+    /* Estilos CSS para o menu principal */
+    .menu {
+      list-style: none; /* Remove os marcadores de lista (pontos ou números) */
+      padding: 0; /* Remove o espaçamento interno da lista */
+      background-color: #66da7f;/*fundo do menu*/
+    }
+    .menu li {
+      display: inline-block; /* Define os itens como blocos em linha, fazendo-os aparecerem lado a lado */
+      margin-right: 20px; /* Adiciona uma margem de 20 pixels à direita de cada item, criando um espaçamento entre eles */
+      position: relative; /* Define a posição como "relativa" para que possamos trabalhar com posicionamento absoluto nos submenus */
+    }
+    .menu li:last-child {
+      margin-right: 0; /* Remove a margem à direita do último item, eliminando o espaçamento extra */
+    }
+    .menu a {
+      text-decoration: none; /* Remove a decoração de texto sublinhado dos links */
+      color: #333; /* Define a cor do texto dos links como cinza escuro (#333) */
+      font-weight: bold; /* Deixa o texto em negrito */
+      padding: 5px; /* Adiciona um espaçamento interno de 5 pixels nos links */
+    }
+
+    /* Estilos CSS para o submenu */
+    .submenu {
+      display: none; /* Inicialmente, esconde o submenu */
+      position: absolute; /* Define a posição como "absoluta" para o submenu ficar posicionado em relação ao menu pai */
+      top: 100%; /* Alinha o topo do submenu com a parte de baixo do menu pai */
+      left: 0; /* Alinha a esquerda do submenu com a esquerda do menu pai */
+      background-color: #f0e32e; /* Define uma cor de fundo para o submenu */
+      border-radius: 5px; /* Adiciona bordas arredondadas ao submenu */
+      opacity: 0; /* Define a opacidade inicial como 0 para criar um efeito de transição */
+      visibility: hidden; /* Esconde o submenu, mas ainda ocupa espaço */
+      transition: opacity 0.3s, visibility 0.3s; /* Adiciona uma transição suave de 0.3 segundos para a opacidade e visibilidade do submenu */
+    }
+
+    /* Estilos CSS para o efeito de exibir o submenu quando o mouse estiver sobre o item do menu */
+    .menu li:hover .submenu {
+      display: block; /* Exibe o submenu quando o mouse estiver sobre o item do menu */
+      opacity: 1; /* Aumenta a opacidade do submenu para 1, tornando-o visível */
+      visibility: visible; /* Torna o submenu visível */
+    }
+
+    /* Estilos CSS para os itens do submenu */
+    .submenu li {
+      display: block; 
+      /* Define os itens do submenu como blocos, fazendo-os aparecerem um abaixo do outro */
+      transform: translateY(-10px); 
+      /* Desloca os itens do submenu 10 pixels para cima, tornando-os invisíveis */
+      transition: transform 0.3s; 
+      /* Adiciona uma transição de 0.3 segundos para o efeito de deslocamento dos itens do submenu */
+    }
+    /* Adiciona um pequeno atraso para o efeito de transição dos itens do submenu */
+    .submenu li:nth-child(1) { transition-delay: 0.1s; } 
+    .submenu li:nth-child(2) { transition-delay: 0.2s; }
+    .submenu li:nth-child(3) { transition-delay: 0.3s; }
+    .submenu li:nth-child(4) { transition-delay: 0.4s; }
+    .submenu li:nth-child(5) { transition-delay: 0.5s; }
+
+    /* Estilos CSS para os links do submenu */
+    .submenu li a {
+      color: #333; 
+      /* Define a cor do texto dos links do submenu como cinza escuro (#333) */
+      padding: 5px; 
+      /* Adiciona um espaçamento interno de 5 pixels nos links */
+      display: block; 
+      /* Faz os links do submenu ocuparem toda a largura disponível e ficarem um abaixo do outro */
+      text-align: left;
+       /* Alinha o texto dos links do submenu à esquerda */
+    }
+
+    /* Estilos CSS para o efeito de realce dos links do submenu quando o mouse estiver sobre eles */
+    .submenu li a:hover {
+      background-color: #0e4fc7; 
+      /* Define uma cor de fundo cinza claro (#ddd) quando o mouse estiver sobre os links do submenu, criando um efeito de realce */
+      color: #ffffff; 
+    }
+
+    /* Estilos CSS para o efeito de deslocamento dos itens do submenu quando o mouse estiver sobre o item do menu */
+    .menu li:hover .submenu li {
+      transform: translateY(0);
+       /* Desloca os itens do submenu de volta à sua posição original quando o mouse estiver sobre o item do menu */
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo - Estilos Avançados para Menus</h1>
+  <ul class="menu">
+    <!-- Itens do menu principal -->
+    <li>
+      <a href="#">Home</a>
+      <!-- Submenu -->
+      <ul class="submenu">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Serviços</a>
+      <!-- Submenu -->
+      <ul class="submenu">
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Desenvolvimento</a></li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
