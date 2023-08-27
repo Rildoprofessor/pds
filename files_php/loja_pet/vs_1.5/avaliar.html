@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Pets</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+<header>
+    <h1 class="texto_h1">Loja de Pets</h1>
+    <h2>O melhor lugar para encontrar seu companheiro!</h2>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="avaliar.html">Avaliar</a></li>
+            </ul>
+    </nav>
+</header>
+    <div>
+        <h1>Loja Pet</h1>
+
+        <h2>Avalie nosso serviço ou produto</h2>
+    </div>
+    <div>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pontuacao">Pontuação:</label>
+            <select id="pontuacao" name="pontuacao">
+                <option value="1">1 estrela</option>
+                <option value="2">2 estrelas</option>
+                <option value="3">3 estrelas</option>
+                <option value="4">4 estrelas</option>
+                <option value="5">5 estrelas</option>
+            </select>
+            <br>
+            <label for="comentario">Comentário:</label><br>
+            <textarea id="comentario" name="comentario"></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+<footer>
+    <div class="footer-columns">
+        <div class="footer-column">
+            <h3>Sobre Nós</h3>
+            <p>Texto sobre a loja e sua missão.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Horário de Atendimento</h3>
+            <p>Segunda a sexta: 9h às 18h</p>
+            <p>Sábados: 9h às 14h</p>
+        </div>
+        <div class="footer-column">
+            <h3>Localização</h3>
+            <p>Endereço: Rua Exemplo, 123</p>
+            <p>Cidade, Estado - CEP: 12345-678</p>
+        </div>
+    </div>
+			<div>            <ul class="social-media-icons" style="justify-content: center;"> <!-- Centralizando os ícones -->
+                <li><a href="#"><img src="img/youtube.png" alt="YouTube"></a></li>
+                <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+            </ul></div>
+    <p class="text-center">&copy; 2023 Loja Pet. Todos os direitos reservados.</p> <!-- Centralizando o último parágrafo -->
+
+</footer>
+</body>
+</html>

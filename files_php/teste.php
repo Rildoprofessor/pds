@@ -10,6 +10,10 @@
 <?php
 $str = "Hello world!";
 echo $str;
+$a = `time`;
+
+echo $a;
+
 ?>
 </body>
 </html>
