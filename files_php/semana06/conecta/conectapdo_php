@@ -1,0 +1,35 @@
+<?php
+$host = "localhost";
+$user = "root";
+$password = "root";
+$database = "loja";
+
+try {
+    $conn = new PDO("mysql:host=$host;dbname=$database", $user, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    header("Location: falha.php");
+    exit();
+}
+
+$nome_do_produto = $_POST["nome_do_produto"];
+$preco = $_POST["preco"];
+$descricao = $_POST["descricao"];
+
+$query = "INSERT INTO produtos (nome_do_produto,
+ preco, descricao) VALUES (:nome, :preco, :descricao)";
+
+try {
+    $stmt = $conn->prepare($query);
+    $stmt->bindParam(':nome', $nome_do_produto);
+    $stmt->bindParam(':preco', $preco);
+    $stmt->bindParam(':descricao', $descricao);
+    $stmt->execute();
+    
+    header("Location: sucesso.php");
+    exit();
+} catch (PDOException $e) {
+    header("Location: falha.php");
+    exit();
+}
+?>

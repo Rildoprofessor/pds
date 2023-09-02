@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Pedido</title>
+</head>
+<body>
+    <h1>Formulário de Pedido</h1>
+    <form action="processar_pedido.php" method="POST">
+        <label for="nome_do_produto">Nome do Produto:</label>
+        <input type="text" name="nome_do_produto" required><br>
+        
+        <label for="preco">Preço:</label>
+        <input type="number" name="preco" step="0.01" required><br>
+        
+        <label for="descricao">Descrição:</label>
+        <textarea name="descricao"></textarea><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p>O que está no banco <a href="mostrar_produtos.php" target="_blank">Loja</a>.</p>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Espécie: Cachorro, Nome: Bingo, Raça: vira-lata
+Espécie: Gato, Nome: Fifi, Pelagem: lisa
